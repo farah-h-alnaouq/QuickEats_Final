@@ -1,58 +1,64 @@
 package com.example.quickeats;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.GridView; // تم الإضافة
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.GridView;
 import android.widget.Toast;
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import com.google.android.material.navigation.NavigationView;
-import java.util.ArrayList; // تم الإضافة
+import java.util.ArrayList;
 
 public class activity_home extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
-    private NavigationView navigationView;
-    private GridView gridView; // تم الإضافة لتعريف الشبكة
-    private ArrayList<Food> foodList; // تم الإضافة لتعريف القائمة
+    private GridView gridView;
+    private ArrayList<Food> foodList;
+    private FoodAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        //  إعداد الـ Toolbar
+        //  إعداد Toolbar و Drawer
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        //  إعداد القائمة الجانبية (Drawer)
         drawerLayout = findViewById(R.id.drawer_layout);
-        navigationView = findViewById(R.id.nav_view);
+        toolbar.setNavigationOnClickListener(v -> drawerLayout.openDrawer(GravityCompat.START));
 
-        toolbar.setNavigationOnClickListener(v -> {
-            drawerLayout.openDrawer(GravityCompat.START);
-        });
+        //  برمجة القائمة الجانبية (Navigation Drawer)
+        NavigationView navigationView = findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(MenuItem item) {
+                int id = item.getItemId();
 
-        navigationView.setNavigationItemSelectedListener(item -> {
-            int id = item.getItemId();
-            if (id == R.id.nav_home) {
-                Toast.makeText(this, "Home selected", Toast.LENGTH_SHORT).show();
-            } else if (id == R.id.nav_logout) {
-                finish();
+                if (id == R.id.nav_home) {
+                    Toast.makeText(activity_home.this, "أنت في الرئيسية", Toast.LENGTH_SHORT).show();
+                } else if (id == R.id.nav_cart) {
+                    startActivity(new Intent(activity_home.this, CartActivity.class));
+                } else if (id == R.id.nav_orders) {
+                    startActivity(new Intent(activity_home.this, OrdersActivity.class));
+                } else if (id == R.id.nav_logout) {
+                    startActivity(new Intent(activity_home.this, activity_login.class));
+                    finish();
+                }
+
+                drawerLayout.closeDrawer(GravityCompat.START);
+                return true;
             }
-            drawerLayout.closeDrawer(GravityCompat.START);
-            return true;
         });
 
-
-        //  ربط الـ GridView من ملف الـ XML
+        //  عرض الأكلات في الـ GridView
         gridView = findViewById(R.id.food_grid);
-
-        //  تعبئة قائمة الوجبات (ArrayList)
         foodList = new ArrayList<>();
         foodList.add(new Food("Mixed Fried Meat", "25 $", R.drawable.food1));
         foodList.add(new Food("Italian Pizza", "30 $", R.drawable.food2));
@@ -64,19 +70,23 @@ public class activity_home extends AppCompatActivity {
         foodList.add(new Food("Steak House", "45 $", R.drawable.food8));
         foodList.add(new Food("Calzone", "35 $", R.drawable.food9));
 
-        //  ربط البيانات بالـ Adapter
-        FoodAdapter adapter = new FoodAdapter(this, foodList);
+        adapter = new FoodAdapter(this, foodList);
         gridView.setAdapter(adapter);
 
-        // إضافة حدث عند الضغط على أي وجبة (Java Event)
-        gridView.setOnItemClickListener((parent, view, position, id) -> {
-            String selectedFood = foodList.get(position).getName();
-            Toast.makeText(activity_home.this, "You clicked: " + selectedFood, Toast.LENGTH_SHORT).show();
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Food selectedItem = foodList.get(position);
+                Intent intent = new Intent(activity_home.this, FoodDetailsActivity.class);
+                intent.putExtra("foodName", selectedItem.getName());
+                intent.putExtra("foodPrice", selectedItem.getPrice());
+                intent.putExtra("foodImage", selectedItem.getImage());
+                startActivity(intent);
+            }
         });
-
-        // --------------------------------------------------
     }
 
+    // --- برمجة المنيو (الثلاث نقاط) ---
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_menu, menu);
@@ -86,10 +96,22 @@ public class activity_home extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        if (id == R.id.nav_logout) {
+
+        if (id == R.id.nav_home) {
+            Toast.makeText(this, "أنت بالفعل في الرئيسية", Toast.LENGTH_SHORT).show();
+            return true;
+        } else if (id == R.id.nav_cart) {
+            startActivity(new Intent(this, CartActivity.class));
+            return true;
+        } else if (id == R.id.nav_orders) {
+            startActivity(new Intent(this, OrdersActivity.class));
+            return true;
+        } else if (id == R.id.nav_logout) {
+            startActivity(new Intent(this, activity_login.class));
             finish();
             return true;
         }
+
         return super.onOptionsItemSelected(item);
     }
 }
