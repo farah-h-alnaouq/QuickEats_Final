@@ -1,33 +1,69 @@
-# FoodieGo - Food Delivery App 🍕
+# 🍕 تطبيق FoodieGo
 
-تطبيق **FoodieGo** هو تطبيق أندرويد متكامل تم تطويره بلغة **Java**، يهدف إلى تسهيل عملية طلب الطعام عبر واجهات مستخدم جذابة وسهلة الاستخدام. يغطي التطبيق دورة الطلب كاملة بدءاً من الترحيب وحتى تأكيد الشراء.
+تطبيق **FoodieGo** هو تطبيق أندرويد متكامل لطلب الطعام، صُمم ليوفر تجربة سهلة وممتعة للمستخدمين في تصفح واختيار وجباتهم المفضلة. يتميز التطبيق بتصميم عصري وواجهات متعددة تغطي كافة خطوات عملية الشراء.
 
-## ✨ المميزات الرئيسية
-* **نظام هوية المستخدم:** واجهات احترافية لتسجيل الدخول وإنشاء حساب جديد.
-* **تصفح ذكي:** عرض الوجبات باستخدام `GridView` مع صور عالية الجودة وأسعار واضحة.
-* **تفاصيل الوجبة:** إمكانية رؤية وصف الوجبة والتحكم في الكمية قبل الإضافة للسلة.
-* **سلة تسوق مرنة:** تحديث تلقائي للسعر الإجمالي عند إضافة الوجبات.
-* **إدارة الطلبات:** واجهة مخصصة لعرض الطلبات السابقة (Previous Orders).
-* **تجربة مستخدم (UX) متكاملة:** تشمل شاشات الـ Splash و Onboarding و Success.
+## ✨ مميزات المشروع
+* **تنوع الواجهات:** يحتوي التطبيق على 10 واجهات برمجية لضمان شمولية الخدمة.
+* **سهولة التصفح:** نظام عرض وجبات منظم يسهل على المستخدم الوصول لما يريد.
+* **تجربة كاملة:** تبدأ من شاشات الترحيب وتنتهي بتأكيد نجاح الطلب.
+* **قائمة جانبية:** توفر وصولاً سريعاً للصفحة الرئيسية، الطلبات السابقة، والسلة.
 
-## 📱 واجهات التطبيق (Screenshots)
+---
 
-| شاشة البداية | تسجيل الدخول | القائمة الرئيسية | تفاصيل الوجبة |
-|---|---|---|---|
-| <img src="splash.jpg" width="150"> | <img src="login.jpg" width="150"> | <img src="home.jpg" width="150"> | <img src="details.jpg" width="150"> |
+## 📱 واجهات التطبيق (10 واجهة)
+تم بناء التطبيق ليتكون من الصفحات التالية:
 
-| سلة التسوق | تأكيد الطلب | القائمة الجانبية | الطلبات السابقة |
-|---|---|---|---|
-| <img src="cart.jpg" width="150"> | <img src="success.jpg" width="150"> | <img src="drawer.jpg" width="150"> | <img src="previous_orders.jpg" width="150"> |
+1.  **شاشة الترحيب (Splash Screen):** تظهر عند فتح التطبيق بشعار FoodieGo.
+2.  **واجهات التعريف (Onboarding):** تشرح للمستخدم مميزات التطبيق بشكل سريع.
+3.  **صفحة البداية (Get Started):** نقطة الانطلاق لتسجيل الدخول أو البدء.
+4.  **تسجيل الدخول (Login):** للدخول إلى الحساب الشخصي.
+5.  **إنشاء حساب (Sign Up):** للمستخدمين الجدد.
+6.  **الرئيسية (Home):** تعرض أصناف الأكل مثل البرجر والسلطات والمعكرونة.
+7.  **تفاصيل الوجبة (Food Details):** تعرض مكونات الوجبة وسعرها مع خيار الإضافة للسلة.
+8.  **سلة المشتريات (Cart):** مراجعة الوجبات المختارة وحساب الإجمالي.
+9. **نجاح الطلب (Order Success):** واجهة مبهجة تؤكد إتمام الطلب بنجاح.
+10. **طلباتي (Orders):** لمتابعة حالة الطلبات الحالية والسابقة..
+11. **القائمة الجانبية (Drawer):** لتسهيل التنقل داخل أقسام التطبيق.
 
-## 🛠 التكنولوجيا المستخدمة
-* **اللغة البرمجية:** Java.
-* **التصميم:** XML مع استخدام Material Design.
-* **المكونات البرمجية:** * `Adapters` لربط البيانات بالقوائم.
-    * `Intents` للتنقل السلس بين الـ 10 واجهات.
-    * `Navigation Drawer` للتنقل الجانبي.
+---
 
-## 📁 بنية المشروع
-* **Activities:** تشمل ملفات الجافا لكل واجهة برمجية.
-* **Layouts:** ملفات XML التي تحتوي على التصاميم الظاهرة في الصور أعلاه.
-* **Assets:** أيقونات وصور الوجبات المستخدمة.
+## 📸 لقطات من داخل التطبيق
+<img width="608" height="1350" alt="image" src="https://github.com/user-attachments/assets/a9e3f145-28f1-4af5-89db-6f266cbfa1db" />
+<img width="608" height="1350" alt="image" src="https://github.com/user-attachments/assets/62a95dc8-fbfa-472a-81a2-938840b19e72" />
+<img width="608" height="1350" alt="image" src="https://github.com/user-attachments/assets/d7332e14-6d01-43c3-9c0a-1e0a53d78085" />
+<img width="608" height="1350" alt="image" src="https://github.com/user-attachments/assets/b8672991-b21b-43b4-86e1-42cfc3d17f61" />
+<img width="608" height="1350" alt="image" src="https://github.com/user-attachments/assets/3dc357b4-91b7-42e7-86ba-f47fc292030c" />
+<img width="608" height="1350" alt="image" src="https://github.com/user-attachments/assets/d8bba61b-0048-462c-aa08-ace9069da0d6" />
+<img width="608" height="1350" alt="image" src="https://github.com/user-attachments/assets/980946d8-d438-47ba-bf76-77d85edc5db0" />
+<img width="608" height="1350" alt="image" src="https://github.com/user-attachments/assets/20cfc537-25b5-4e1e-8642-fda271dae35e" />
+<img width="608" height="1350" alt="image" src="https://github.com/user-attachments/assets/dd4bd153-3050-40c5-81fc-e7114b4c06ef" />
+<img width="608" height="1350" alt="image" src="https://github.com/user-attachments/assets/b5bb292f-6ad6-4b1d-9d1c-c9045c83885d" />
+<img width="608" height="1350" alt="image" src="https://github.com/user-attachments/assets/574e2382-1d86-408e-9867-5193e9f5759b" />
+<img width="608" height="1350" alt="image" src="https://github.com/user-attachments/assets/055be772-a252-4ac9-9874-6c2e58dfec7c" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p align="center">
+  <img src="splash.png" width="180">
+  <img src="home.png" width="180">
+  <img src="cart.png" width="180">
+  <img src="success.png" width="180">
+</p>
+
+---
+
+## 🛠 الأدوات المستخدمة
+* **اللغة:** Java.
+* **البيئة التطويرية:** Android Studio.
+* **التنسيق:** XML Layouts.
