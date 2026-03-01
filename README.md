@@ -1,6 +1,6 @@
-# 🍕 تطبيق FoodieGo
+# 🍕 تطبيق FoodiGo
 
-تطبيق **FoodieGo** هو تطبيق أندرويد متكامل لطلب الطعام، صُمم ليوفر تجربة سهلة وممتعة للمستخدمين في تصفح واختيار وجباتهم المفضلة. يتميز التطبيق بتصميم عصري وواجهات متعددة تغطي كافة خطوات عملية الشراء.
+تطبيق **FoodiGo** هو تطبيق أندرويد متكامل لطلب الطعام، صُمم ليوفر تجربة سهلة وممتعة للمستخدمين في تصفح واختيار وجباتهم المفضلة. يتميز التطبيق بتصميم عصري وواجهات متعددة تغطي كافة خطوات عملية الشراء.
 
 ## ✨ مميزات المشروع
 * **تنوع الواجهات:** يحتوي التطبيق على 10 واجهات برمجية لضمان شمولية الخدمة.
@@ -25,34 +25,35 @@
 10. **طلباتي (Orders):** لمتابعة حالة الطلبات الحالية والسابقة..
 11. **القائمة الجانبية (Drawer):** لتسهيل التنقل داخل أقسام التطبيق.
 
----
 
-## 📸 لقطات من التطبيق (App Screenshots)
+---## 📸 لقطات من التطبيق (App Screenshots)
 
 <p align="center">
-  <img src="1.png" width="180" />
-  <img src="2.png" width="180" />
-  <img src="3.png" width="180" />
-  <img src="4.png" width="180" />
+  <img src="screenshots/1.png" width="160" />
+  <img src="screenshots/2.png" width="160" />
+  <img src="screenshots/3.png" width="160" />
+  <img src="screenshots/4.png" width="160" />
 </p>
 
 <p align="center">
-  <img src="5.png" width="180" />
-  <img src="6.png" width="180" />
-  <img src="7.png" width="180" />
-  <img src="8.png" width="180" />
+  <img src="screenshots/5.png" width="160" />
+  <img src="screenshots/6.png" width="160" />
+  <img src="screenshots/7.png" width="160" />
+  <img src="screenshots/8.png" width="160" />
 </p>
 
 <p align="center">
-  <img src="9.png" width="180" />
-  <img src="10.png" width="180" />
-  <img src="11.png" width="180" />
-  <img src="12.png" width="180" />
+  <img src="screenshots/9.png" width="160" />
+  <img src="screenshots/10.png" width="160" />
+  <img src="screenshots/11.png" width="160" />
+  <img src="screenshots/12.png" width="160" />
 </p>
 
 <p align="center">
-  <img src="13.png" width="180" />
+  <img src="screenshots/13.png" width="160" />
 </p>
+
+
 
 
 
