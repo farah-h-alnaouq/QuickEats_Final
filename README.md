@@ -27,39 +27,46 @@
 
 ---
 
-## 📸 لقطات من داخل التطبيق
-<img width="608" height="1350" alt="image" src="https://github.com/user-attachments/assets/a9e3f145-28f1-4af5-89db-6f266cbfa1db" />
-<img width="608" height="1350" alt="image" src="https://github.com/user-attachments/assets/62a95dc8-fbfa-472a-81a2-938840b19e72" />
-<img width="608" height="1350" alt="image" src="https://github.com/user-attachments/assets/d7332e14-6d01-43c3-9c0a-1e0a53d78085" />
-<img width="608" height="1350" alt="image" src="https://github.com/user-attachments/assets/b8672991-b21b-43b4-86e1-42cfc3d17f61" />
-<img width="608" height="1350" alt="image" src="https://github.com/user-attachments/assets/3dc357b4-91b7-42e7-86ba-f47fc292030c" />
-<img width="608" height="1350" alt="image" src="https://github.com/user-attachments/assets/d8bba61b-0048-462c-aa08-ace9069da0d6" />
-<img width="608" height="1350" alt="image" src="https://github.com/user-attachments/assets/980946d8-d438-47ba-bf76-77d85edc5db0" />
-<img width="608" height="1350" alt="image" src="https://github.com/user-attachments/assets/20cfc537-25b5-4e1e-8642-fda271dae35e" />
-<img width="608" height="1350" alt="image" src="https://github.com/user-attachments/assets/dd4bd153-3050-40c5-81fc-e7114b4c06ef" />
-<img width="608" height="1350" alt="image" src="https://github.com/user-attachments/assets/b5bb292f-6ad6-4b1d-9d1c-c9045c83885d" />
-<img width="608" height="1350" alt="image" src="https://github.com/user-attachments/assets/574e2382-1d86-408e-9867-5193e9f5759b" />
-<img width="608" height="1350" alt="image" src="https://github.com/user-attachments/assets/055be772-a252-4ac9-9874-6c2e58dfec7c" />
-
-
-
-
-
-
-
-
-
-
-
-
-
+## 📸 لقطات من التطبيق (App Screenshots)
 
 <p align="center">
-  <img src="splash.png" width="180">
-  <img src="home.png" width="180">
-  <img src="cart.png" width="180">
-  <img src="success.png" width="180">
+  <img src="1.jpg" width="180" />
+  <img src="2.jpg" width="180" />
+  <img src="3.jpg" width="180" />
+  <img src="4.jpg" width="180" />
 </p>
+
+<p align="center">
+  <img src="5.jpg" width="180" />
+  <img src="6.jpg" width="180" />
+  <img src="7.jpg" width="180" />
+  <img src="8.jpg" width="180" />
+</p>
+
+<p align="center">
+  <img src="9.jpg" width="180" />
+  <img src="10.jpg" width="180" />
+  <img src="11.jpg" width="180" />
+  <img src="12.jpg" width="180" />
+</p>
+
+<p align="center">
+  <img src="13.jpg" width="180" />
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 
